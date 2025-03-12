@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <!-- install bootstrap -->
+    <link rel="stylesheet" href="/public/style/bootstrap.min.css">
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="/public/style/register.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-6 mt-5">
+            <h2>Welcome to <span class="text-primary">Asset Borrowing System!</span></h2>
+            <p class="text-secondary">Register your account.</p>
+
+            <label for="username" class="mt-3">Username</label>
+            <input id="password" type="text" class="form-control mt-2">
+            <label for="password" class="mt-3">Password</label>
+            <input id="password" type="password" class="form-control mt-2">
+            
+            <p class="mt-3">Status</p>
+            <input id="student" type="radio" name="status" value="student">
+            <label for="student" class="me-2">Student</label>
+            <input id="lecturer" type="radio" name="status" value="lecturer">
+            <label for="lecturer" class="me-2">Lecturer</label>
+            <input id="staff" type="radio" name="status" value="staff">
+            <label for="staff">Staff</label>
+
+            <button class="btn btn-success d-block mt-4 px-5 rounded-pill">Sign in</button>
+        </div>
+        <div class="col-1">
+            <button class="btn btn-outline-secondary mt-4 rounded-pill">register</button>
+        </div>
+    </div>
+    <!-- install bootstrap -->
+    <script src="/public/javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>

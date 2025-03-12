@@ -1,0 +1,15 @@
+* {
+    font-family: 'Anton', sans-serif;
+}
+
+.col-5 {
+    background-image: url("/public/images/loginBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h2 {
+    font-weight: 600;
+}
