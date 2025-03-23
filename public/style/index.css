@@ -1,16 +1,12 @@
-* {
-    font-family: 'Anton', sans-serif;
-}
-
-body {
-  background-image: url("/public/images/loginBackground.jpg");
+.background {
+  background-image: url("/public/images/indexBackground.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  border-radius: 10px;
+  position: relative;
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: 600;
+button {
+  width: 8rem;
 }

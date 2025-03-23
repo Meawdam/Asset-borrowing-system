@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="/public/style/bootstrap.min.css">
+    <script src="/public/javascript/bootstrap.min.js"></script>
+</head>
+
+<!-- History -->
+<!-- แสดงประวัติการยืม การคืน -->
+
+<!-- Remark -->
+<!-- Show log of borrowing and returning history (product name, borrowed date, returned date, 
+    who borrowed, who approved or rejected, who got asset back) -->
+
+<body class="bg-light">
+    <nav class="navbar navbar-light p-3 bg-white">
+        <h2><span class="text-primary px-5 fw-bold">Asset Borrowing System</span></h2>
+        <div>
+            <a href="/views/borrower/home.html" class="nav-link d-inline mx-2 text-secondary">Home</a>
+            <a href="/views/borrower/reqStatus.html" class="nav-link d-inline mx-2 text-secondary">Requests</a>
+            <a href="/views/borrower/history.html" class="nav-link d-inline mx-2 fw-bold">History</a>
+        </div>
+        <a href="/views/index.html" class="nav-link d-inline"><button class="btn btn-danger rounded-pill px-5">Sign Out</button></a>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- type here -->
+            <h3 class="fw-bold" style="margin-left: 230px;">History</h3>
+            <table class="table table-bordered mx-auto mt-2 table-hover" style="width: 75%;">
+                <thead class="table-light">
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Name</th>
+                        <th>Asset Name</th>
+                        <th>Borrow Date</th>
+                        <th>Return Date</th>
+                        <th>Status</th>
+                        <th>Returned</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>012</td>
+                        <td>ICE Kung</td>
+                        <td>Football</td>
+                        <td>2025-03-16</td>
+                        <td>2025-03-20</td>
+                        <td>Approve</td>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>345</td>
+                        <td>ICE kung</td>
+                        <td>Panddle</td>
+                        <td>2025-03-16</td>
+                        <td>2025-03-18</td>
+                        <td>
+                            Approve
+                        </td>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>678</td>
+                        <td>ICE kung</td>
+                        <td>Skate</td>
+                        <td>2025-03-16</td>
+                        <td>2025-03-18</td>
+                        <td>
+                            Approve
+                        </td>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>999</td>
+                        <td>ICE kung</td>
+                        <td>Volleyball</td>
+                        <td>2025-03-16</td>
+                        <td>2025-03-18</td>
+                        <td>
+                            Approve
+                        </td>
+                        <td>Yes</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

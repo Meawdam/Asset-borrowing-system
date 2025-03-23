@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Borrowing System</title>
+    <link href="/public/style/bootstrap.min.css" rel="stylesheet">
+    <script src="/public/javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        h2 { font-family: 'Anton', sans-serif; }
+        img { height: 150px; }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-light p-3 bg-white">
+        <h2><span class="text-primary px-5 fw-bold">Asset Borrowing System</span></h2>
+        <div>
+            <a href="/views/staff/home.html" class="nav-link d-inline mx-2 fw-bold">Home</a>
+            <a href="/views/staff/assetManagement.html" class="nav-link d-inline mx-2 text-secondary">Manage</a>
+            <a href="/views/staff/dashbord.html" class="nav-link d-inline mx-2 text-secondary">Dashboard</a>
+            <a href="/views/staff/history.html" class="nav-link d-inline mx-2 text-secondary">History</a>
+        </div>
+        <a href="/views/index.html" class="nav-link d-inline"><button class="btn btn-danger rounded-pill px-5">Sign Out</button></a>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Racquet</h5>
+                    <img src="/public/images/Racquet.jpg" class="mx-auto d-block">
+                    <p class="text-success">Available</p>
+                    <button class="borrow-btn btn btn-info rounded-pill">BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Shuttle</h5>
+                        <img src="/public/images/Shuttle.jpg" class="mx-auto d-block">
+                    <p class="text-warning">Pending</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Basketball</h5>
+                        <img src="/public/images/Basketball.jpg" class="mx-auto d-block">
+                    <p class="text-primary">Borrowed</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Jumping Rope</h5>
+                        <img src="/public/images/Jumping Rope.jpg" class="mx-auto d-block">
+                    <p class="text-danger">Disabled</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Paddle</h5>
+                        <img src="/public/images/Paddle.jpg" class="mx-auto d-block">
+                    <p class="text-success">Available</p>
+                    <button class="borrow-btn btn btn-info rounded-pill">BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Football</h5>
+                    <img src="/public/images/Football.jpg" class="mx-auto d-block">
+                    <p class="text-warning">Pending</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Rugby Ball</h5>
+                    <img src="/public/images/Rugby Ball.jpg" class="mx-auto d-block">
+                    <p class="text-primary">Borrowed</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Boxing Gloves</h5>
+                    <img src="/public/images/Boxing Gloves.jpg" class="mx-auto d-block">
+                    <p class="text-danger">Disabled</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Tennis Racquet</h5>
+                    <img src="/public/images/Tennis Racquet.jpg" class="mx-auto d-block">
+                    <p class="text-success">Available</p>
+                    <button class="borrow-btn btn btn-info rounded-pill">BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Volleyball</h5>
+                    <img src="/public/images/Volleyball.jpg" class="mx-auto d-block">
+                    <p class="text-warning">Pending</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Yoga Mat</h5>
+                    <img src="/public/images/Yoga Mat.jpg" class="mx-auto d-block">
+                    <p class="text-primary">Borrowed</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 fw-bold">
+                <div class="card p-3 text-center">
+                    <h5>Skate</h5>
+                    <img src="/public/images/Skate.jpg" class="mx-auto d-block">
+                    <p class="text-danger">Disabled</p>
+                    <button class="borrow-btn btn btn-secondary rounded-pill" disabled>BORROW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.querySelectorAll('.borrow-btn').forEach(button => {
+        button.onclick = function(event) {
+            const today = new Date().toISOString().split('T')[0];
+
+            Swal.fire({
+                title: 'Enter borrow and return dates',
+                html: `
+                    <label for="borrow-date">Borrow Date</label>
+                    <input type="date" id="borrow-date" class="swal2-input" placeholder="Borrow Date" value="${today}" min="${today}">
+                    <label for="return-date">Return Date</label>
+                    <input type="date" id="return-date" class="swal2-input" placeholder="Return Date" min="${today}">
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Submit',
+                cancelButtonText: 'Cancel',
+                preConfirm: () => {
+                    const borrowDate = document.querySelector('#borrow-date').value;
+                    const returnDate = document.querySelector('#return-date').value;
+
+                    if (!borrowDate || !returnDate) {
+                        Swal.showValidationMessage('Please enter both dates');
+                    } else if (returnDate < borrowDate) {
+                        Swal.showValidationMessage('Returning date must be today or after the borrowing date');
+                    } else {
+                        return { borrowDate, returnDate };
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    console.log('Borrow Date:', result.value.borrowDate);
+                    console.log('Return Date:', result.value.returnDate);
+                    // Add logic here to handle the borrowing process
+                }
+            });
+        };
+    });
+    </script>
+</body>
+</html>

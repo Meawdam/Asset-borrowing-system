@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
     <!-- install bootstrap -->
-    <link rel="stylesheet" href="/public/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/style/bootstrap.min.css" />
     <!-- like stylesheet -->
-    <link rel="stylesheet" href="/public/style/index.css">
-</head>
-<body>
-    <div class="container">
-        <div class="d-flex flex-column justify-content-center align-items-center vh-100">
-                <h1 class="text-light text-bold">ASSET BORROWING SYSTEM</h1>
-                <button class="btn btn-success mt-3 px-5 rounded-pill">SIGN IN</button>
-                <p class="text-light mt-2">Have no account? <a href="login.html">register</a></p>
-          </div>
-    </div>
+    <link rel="stylesheet" href="/public/style/index.css" />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="background d-flex flex-column justify-content-center align-items-center p-4 w-75 h-75 shadow-lg rounded">
+          <h1 class="text-light text-center fw-bold text-shadow">ASSET BORROWING SYSTEM</h1>
+          <button id="signIn" class="btn btn-success mt-3 rounded-pill">SIGN IN</button>
+          <p class="text-light mt-3">OR</p>
+          <button id="register" class="btn btn-success rounded-pill">REGISTER</button>
+        </div>
+      </div>
 
     <!-- install bootstrap -->
-     <script src="/public/javascript/bootstrap.bundle.min.js"></script>
-     <script src="/public/javascript/bootstrap.min.js"></script>
-</body>
+    <script src="/public/javascript/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascript/bootstrap.min.js"></script>
+
+    <script>
+      document.querySelector('#signIn').onclick = () => {
+        window.location.replace("/views/login.html");
+      };
+      document.querySelector('#register').onclick = () => {
+        window.location.replace("/views/register.html");
+      };
+    </script>
+  </body>
 </html>
