@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <!-- install bootstrap -->
-    <link rel="stylesheet" href="/public/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style/bootstrap.min.css" />
     <!-- like stylesheet -->
-    <link rel="stylesheet" href="/public/style/index.css" />
+    <link rel="stylesheet" href="/style/index.css" />
   </head>
   <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -20,16 +20,16 @@
       </div>
 
     <!-- install bootstrap -->
-    <script src="/public/javascript/bootstrap.bundle.min.js"></script>
-    <script src="/public/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
 
     <script>
       document.querySelector('#signIn').onclick = () => {
-        window.location.replace("/views/login.html");
-      };
+        window.location.href = '/login' ;}
       document.querySelector('#register').onclick = () => {
         window.location.replace("/views/register.html");
       };
     </script>
   </body>
 </html>
+      
